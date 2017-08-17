@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Bike Shop</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.slide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header clearfix">
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="img/logo.png" alt="The Bike Shop" width="160" height="50">
+        </div>
+        <ul class="main-nav">
+          <li><a href="#">Bicycles</a>
+            <ul class="sub-nav">
+              <li><a href="#">Fixed/Single speed</a></li>
+              <li><a href="#">City bikes</a></li>
+              <li><a href="#">Premium series</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Parts</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Extras</a></li>
+          <li><a href="#" class="basket"><img src="img/basket.png" alt="Корзина" width="26" height="26"></a></li>
+        </ul>
+      </div>
+        <div class="promo">
+          <h1>Handmade bicycle</h1>
+          <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts.</span></p>
+          <a class="btn btn-1" href="#">Shop bikes</a>
+        </div>
+    </header>
+
+    <div class="slide">
+      <ul>
+        <li data-bg="img/header-bg-1.jpg"></li>
+        <li data-bg="img/header-bg-2.jpg"></li>
+        <li data-bg="img/header-bg-3.jpg"></li>
+      </ul>
+    </div>
+
+    <div class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li class="categories-item category-1">
+          <h3>Fixed/Single speed</h3>
+          <p>Are you ready for the 27.5 Revolution?</p>
+        </li>
+        <li class="categories-item category-2">
+          <h3>Premium series</h3>
+          <p>Exclusive Bike Components</p>
+          <a class="btn btn-2" href="#">Go to store</a>
+        </li>
+        <li class="categories-item category-3">
+          <h3>City bikes</h3>
+          <p>Street Playground</p>
+        </li>
+      </ul>
+    </div>
+    <div class="popular-items">
+      <h2>Popular bikes</h2>
+      <ul>
+      <li class="catalog-item">
+        <img src="img/item-1.jpg" alt="Велосипед Fixed gear" width="490" height="391">
+        <h3>Fixed gear</h3>
+        <span>$249.00</span>
+        <div class="buttons">
+          <select id="item-1" name="option">
+            <option value="option">option</option>
+          </select>
+        <input type="button" value="buy">
+      </div>
+      </li>
+      <li class="catalog-item">
+        <img src="img/item-2.jpg" alt="Велосипед Big boy ultra" width="490" height="391">
+        <h3>Big boy ultra</h3>
+        <span>$249.00</span>
+        <div class="buttons">
+          <select id="item-2" name="option">
+            <option value="option">option</option>
+          </select>
+        <input type="button" value="buy">
+        </div>
+      </li>
+      <li class="catalog-item">
+        <img src="img/item-3.jpg" alt="Велосипед Sanchaez" width="490" height="391">
+        <h3>Sanchaez</h3>
+        <span>$249.00</span>
+        <div class="buttons">
+          <select id="item-3" name="option">
+            <option value="option">option</option>
+          </select>
+        <input type="button" value="buy">
+        </div>
+      </li>
+    </ul>
+    </div>
+
+    <div class="feedback">
+      <h2>Contact us</h2>
+      <p class="feedback-tip">
+        Please contact us for all inquiries and purchase options.
+      </p>
+      <div class="feedback-form">
+        <input type="text" placeholder="name" class="half-width">
+        <input type="text" placeholder="surname" class="half-width">
+        <input type="text" placeholder="user@domain.com" class="full-width">
+        <textarea placeholder="message" class="text-box"></textarea>
+        <input type="button" value="send">
+      </div>
+    </div>
+
+    <footer class="page-footer clearfix">
+      <div class="footer-content">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="The Bike Shop" width="160" height="50">
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#">Bicycles</a></li>
+        <li><a href="#">Parts</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Extras</a></li>
+      </ul>
+    </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.slide.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.slide').slide({
+          'slideSpeed': 6000
+        });
+      });
+    </script>
+  </body>
+</html>
