@@ -1,2 +1,2 @@
 # bikeshop
-Study project
+https://jenena.github.io/bikeshop/
